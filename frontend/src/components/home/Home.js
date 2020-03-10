@@ -7,7 +7,7 @@ function Home() {
   return (
     <Box bgcolor="black" width="100vw" height="8vh">
       <Button variant="contained" color="primary">
-        Hola Mundo!
+        Hola Mundo! Pruebas de app
       </Button>
     </Box>
   );
