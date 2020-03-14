@@ -32,7 +32,9 @@ app.use(cookieParser());
 app.use(logger('dev'));
 
 const index = require('./routes/index');
+const client = require('./routes/client');
 app.use('/', index);
+app.use('/', client);
 
 // Uncomment this line for production
 // app.get('/*', (req, res) => res.sendFile(__dirname + '/public/index.html'));
