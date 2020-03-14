@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/core'
 import { MyContext } from '../context'
 
-function Navbar({ history }) {
+function Navbar2({ history }) {
   const go = path => history.push(path)
   return (
     <MyContext.Consumer>
@@ -26,13 +26,13 @@ function Navbar({ history }) {
             mt={["3vh", "2vh", "0vh", "0vh"]}
           >
             <BreadcrumbItem fontSize={["3vh", "6vh", "6vh", "6vh"]}>
-              <BreadcrumbLink  onClick={() => go('/')} color="white"  > Home </BreadcrumbLink>
+              <BreadcrumbLink  onClick={() => go('/')} color="white"  > Inicio </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbItem fontSize={["3vh", "6vh", "6vh", "6vh"]}>
-              <BreadcrumbLink onClick={() => go('/en/projects')} color="white"> Projects </BreadcrumbLink>
+              <BreadcrumbLink onClick={() => go('/es/proyectos')} color="white"> Proyectos </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbItem fontSize={["3vh", "6vh", "6vh", "6vh"]}>
-              <BreadcrumbLink onClick={() => go('/en/contact')} color="white"> Contact </BreadcrumbLink>
+              <BreadcrumbLink onClick={() => go('/es/contacto')} color="white"> Contacto </BreadcrumbLink>
             </BreadcrumbItem>
           </Breadcrumb>
         )
@@ -40,4 +40,4 @@ function Navbar({ history }) {
     </MyContext.Consumer>
   )
 }
-export default withRouter(Navbar)
+export default withRouter(Navbar2)

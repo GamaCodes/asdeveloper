@@ -14,9 +14,12 @@ import {
   Button,
   Textarea
 } from "@chakra-ui/core";
+import English from '../../../components/Navbar'
 
 function Contact () {
   return (
+    <>
+    <English/>
     <Stack
       backgroundImage= "url('/Background.jpg')"
       backgroundSize= {["contain","contain","cover","cover"]}
@@ -36,13 +39,13 @@ function Contact () {
       >
         
         <Flex fontSize={["5vw", "2vw"]} color="white" mt="4vh" mb="2vh">
-          <p>Datos de Contacto:</p>
+          <p>Contact Information:</p>
         </Flex>
         <hr></hr>
         <SimpleGrid columns={[1, 2]} justify="space-around">
           <Box>
             <br></br>
-            <p>Telefono:</p>
+            <p>Phone:</p>
             <p>55 5417-8003</p>
             <Stack isInline justify="center">
               <Box as={IoLogoWhatsapp} size={["10vw", "2vw"]} color="white"/>
@@ -103,13 +106,13 @@ function Contact () {
               justify="center"
               m={4}
             >
-              Enviar
+              Send
             </Button>
         <br></br>
         <hr></hr>
       </Box>
     </Stack>
-
+    </>
   );
 }
 

@@ -13,7 +13,8 @@ class MyProvider extends Component {
         email: '',
         reason: '',
         message: ''
-        }
+        },
+        isEspanol: false
     }
 
     handleContactInput = e => {
@@ -30,19 +31,24 @@ class MyProvider extends Component {
     return await SERVICE.CONTACT(form)
     }
 
-
+    handleEspanolInput = e => {
+      this.setState({ isEspanol: true })
+    }
+    
 render() {
     const {
       state,
         handleContactInput,
-        handleContactSubmit
+        handleContactSubmit,
+        handleEspanolInput
     } = this
     return (
       <MyContext.Provider
         value={{
           state,
             handleContactInput,
-            handleContactSubmit
+            handleContactSubmit,
+            handleEspanolInput
         }}
       >
         {this.props.children}

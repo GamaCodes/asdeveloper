@@ -10,8 +10,11 @@ import {
   ButtonGroup
 } from "@chakra-ui/core";
 
+import English from '../../../components/Navbar'
 function Projects() {
   return (
+    <>
+    <English/>
     <Stack
       backgroundImage= "url('/Background.jpg')"
       backgroundSize= {["contain","contain","cover","cover"]}
@@ -140,12 +143,8 @@ function Projects() {
             </Box>
         </Box>
  
-
-      
-
-
-
     </Stack>
+    </>
 
   );
 }
