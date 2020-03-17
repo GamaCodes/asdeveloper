@@ -37,9 +37,9 @@ function Projects() {
                 lineHeight="tight"
 
                 >
-                Inspirado en los juegos de disparos y en la saga de Star Wars, nace STARHACK.
+                Inspired by shooting games and the Star Wars saga, STARHACK is born.
                 <br></br>
-                * Incluye batalla con el tema especial Ironhack.        
+                * Includes battle with the special Ironhack theme.      
 
                 </Box>
                 <Flex justify="center" mt={5} mb={4}>
@@ -51,7 +51,7 @@ function Projects() {
                     </Link>
                     <Link href="https://slides.com/araujo-code/deck/fullscreen#/" isExternal>
                       <Button variantColor="c3" size="sm">
-                        Presentación
+                        Slides
                       </Button>
                     </Link>
                     <Link href="https://asdeveloper-app.github.io/Star-Hack/" isExternal>
@@ -79,8 +79,7 @@ function Projects() {
                 as="h4"
                 lineHeight="tight"
                 >
-                MANE Te ayuda a gestionar cualquier tipo de evento con un método de lista simple. La idea nace de la necesidad de ayudar a cualquiera a hacer su propio evento.
-                </Box>
+                  MANE Helps you manage any type of event with a simple list method. The idea was born from the need to help anyone to make their own event.                </Box>
                 <Flex justify="center" mt={5} mb={4}>
                   <ButtonGroup spacing={5}>
                     <Link href="https://maneironhack.herokuapp.com/" isExternal>
@@ -90,7 +89,7 @@ function Projects() {
                     </Link>
                     <Link href="https://slides.com/adrianalexisacevedoarmenta/deck-d78fdf/fullscreen#/" isExternal>
                       <Button variantColor="c3" size="sm">
-                        Presentación
+                        Slides
                       </Button>
                     </Link>
                     <Link href="https://maneironhack.herokuapp.com/" isExternal>
@@ -118,8 +117,7 @@ function Projects() {
                 as="h4"
                 lineHeight="tight"
                 >
-                Integral Office es una ERP, o en otras palabras un sistema de planificacion de recursos empresariales, se crea con el fin de poder llevar un mejor control y gestion de negocios.
-                </Box>
+                Integral Office is an ERP, or in other words an enterprise resource planning system, it is created in order to be able to better control and manage business.                </Box>
                 <Flex justify="center" mt={5} mb={4}>
                   <ButtonGroup spacing={5}>
                     <Link href="https://integral-office.netlify.com/" isExternal>
@@ -129,7 +127,7 @@ function Projects() {
                     </Link>
                     <Link href="https://slides.com/araujo-code/deck-70b676/fullscreen#/" isExternal>
                       <Button variantColor="c3" size="sm">
-                        Presentación
+                        Slides
                       </Button>
                     </Link>
                     <Link href="https://integral-office.netlify.com/" isExternal>

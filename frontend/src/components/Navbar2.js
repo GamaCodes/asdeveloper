@@ -26,7 +26,7 @@ function Navbar2({ history }) {
             mt={["3vh", "2vh", "0vh", "0vh"]}
           >
             <BreadcrumbItem fontSize={["3vh", "6vh", "6vh", "6vh"]}>
-              <BreadcrumbLink  onClick={() => go('/')} color="white"  > Inicio </BreadcrumbLink>
+              <BreadcrumbLink  onClick={() => go('/es')} color="white"  > Inicio </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbItem fontSize={["3vh", "6vh", "6vh", "6vh"]}>
               <BreadcrumbLink onClick={() => go('/es/proyectos')} color="white"> Proyectos </BreadcrumbLink>

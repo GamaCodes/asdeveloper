@@ -20,7 +20,7 @@ function Home({ history }) {
       backgroundImage= "url('/Background.jpg')"
       backgroundSize= {["contain","contain","cover","cover"]}
       width= "100vw"
-      height= {["70vh", "100vh", "150vh", "80vh"]}
+      height= {["70vh", "100vh", "150vh", "85vh"]}
       alignItems="center"
     >
       <Image src="../AS developer.png" alt="A|S developer" w={["30vw", "30vw", "20vw", "20vw", ]} mt="10vh" />
@@ -41,7 +41,7 @@ function Home({ history }) {
         <SimpleGrid columns={2} justify="space-around">
           <Box>
             <Flex justify="center">
-              <Link>
+              <Link onclick= "window.scrollTo(0, 0)">
                 <Image onClick={() => go('/en')} src="../usa.png" alt="English" w={["30vw", "30vw", "20vw", "5vw"]} mt="1vh" />
               </Link>
             </Flex>

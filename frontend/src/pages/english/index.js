@@ -74,11 +74,11 @@ function Home() {
         </Flex>
         <hr></hr>
         <Box m={5}>
-          <p>Mi nombre es Arturo Araujo, soy particularmente analítico y un apasionado por la tecnología, siempre buscando implementar nuevas formas de optimizar procesos y dar soluciones.</p>
-          <p>Actualmente soy un Desarrollador Web Full-Stack con un background de mas de 4 años en el sector administrativo, enfocándome en la gestión y las finanzas.</p>
-          <p>Creo firmemente que la programación es la nueva forma de resolver problemas y automatizar procesos y por esta razón decidí entrar a este gran mundo de la programación y así poder explotar mi creatividad y habilidades de gestión automatizando procesos y solucionando las demandas del sector.</p>
-          <p>Los últimos 4 años me he dedicado a explotar mis habilidades creativas y tecnológicas así como las administrativas y de gestión para optimizar procesos dentro las empresas donde he colaborado.</p>
-          <p>"Si puedes imaginarlo, puedo programarlo"</p>
+          <p>My name is Arturo Araujo, I am particularly analytical and passionate about technology, always looking to implement new ways to optimize processes and provide solutions.</p>
+          <p>I am currently a Full-Stack Web Developer with a background of more than 4 years in the administrative sector, focusing on management and finance.</p>
+          <p>I firmly believe that programming is the new way to solve problems and automate processes and for this reason I decided to enter this great world of programming and thus be able to exploit my creativity and management skills by automating processes and solving the demands of the sector.</p>
+          <p>The last 4 years I have dedicated myself to exploiting my creative and technological as well as administrative and management skills to optimize processes within the companies where I have collaborated.</p>
+          <p>"If you can imagine it, I can program it."</p>
         </Box>
         <hr></hr>
       </Box>

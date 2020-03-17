@@ -23,8 +23,6 @@ const Router = () => (
       <Route exact path="/en" component={English} />
       <Route exact path="/en/projects" component={Projects} />
       <Route exact path="/en/contact" component={Contact} />
-      <Route exact path="/projects" component={Contact} />
-      <Route exact path="/contact" component={Contact} />
       <Route exact path="/es" component={Espanol} />
       <Route exact path="/es/proyectos" component={Proyectos} />
       <Route exact path="/es/contacto" component={Contacto} />

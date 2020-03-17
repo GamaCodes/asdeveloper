@@ -9,12 +9,11 @@ class MyProvider extends Component {
       update: false,
       formContact: {
         name: '',
-        phone: '',
         email: '',
+        phone: '',
         reason: '',
         message: ''
         },
-        isEspanol: false
     }
 
     handleContactInput = e => {
@@ -27,28 +26,24 @@ class MyProvider extends Component {
     handleContactSubmit = async e => {
     e.preventDefault()
     const form = this.state.formContact
-    this.setState({ formContact: { name: '', phone: '', email: '', reason: '', message: '' } })
+    this.setState({ formContact: { name: '', email: '', phone: '', reason: '', message: '' } })
     return await SERVICE.CONTACT(form)
     }
 
-    handleEspanolInput = e => {
-      this.setState({ isEspanol: true })
-    }
+
     
 render() {
     const {
       state,
         handleContactInput,
-        handleContactSubmit,
-        handleEspanolInput
+        handleContactSubmit
     } = this
     return (
       <MyContext.Provider
         value={{
           state,
             handleContactInput,
-            handleContactSubmit,
-            handleEspanolInput
+            handleContactSubmit
         }}
       >
         {this.props.children}
