@@ -32,7 +32,7 @@ function Proyectos({history}) {
         </Flex>
         <Box w={["80vw", "50vw"]} borderWidth="1px" rounded="lg" overflow="hidden" bg="white">
             <Flex justify="center">
-              <Image src="../LogoStarHack.png" alt="star hack" w={["30vw", "20vw"]} mt="2vh"/>
+              <Image src="../LogoStarHack.png" alt="StarHack" w={["30vw", "20vw"]} mt="2vh"/>
             </Flex>
             <Box p="4">
 
@@ -75,7 +75,7 @@ function Proyectos({history}) {
         </Flex>
         <Box w={["80vw", "50vw"]} borderWidth="1px" rounded="lg" overflow="hidden" bg="white">
             <Flex justify="center">
-              <Image src="../mane.png" alt="star hack" w={["30vw", "20vw"]} mt="2vh"/>
+              <Image src="../mane.png" alt="Mane" w={["30vw", "20vw"]} mt="2vh"/>
             </Flex> 
             <Box p="4">
 
@@ -114,7 +114,7 @@ function Proyectos({history}) {
         </Flex>
           <Box w={["80vw", "50vw"]} borderWidth="1px" rounded="lg" overflow="hidden" bg="white" >
             <Flex justify="center">
-              <Image src="../iologo.png" alt="star hack" w={["30vw", "20vw"]} mt="2vh"/>
+              <Image src="../iologo.png" alt="IntegralOffice" w={["30vw", "20vw"]}mt="2vh"/>
             </Flex>
             <Box p="4">
 
