@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { withRouter } from "react-router-dom";
+import React, { Component} from 'react';
+import { withRouter} from "react-router-dom";
 import { createContact } from "../../../services/index";
 import { IoLogoWhatsapp } from "react-icons/io"
 import { IoIosMail } from "react-icons/io"
@@ -16,8 +16,12 @@ import {
   Button,
   Textarea,
   Link,
+  Breadcrumb,
+  BreadcrumbItem
 } from "@chakra-ui/core";
 import Espanol from '../../../components/Navbar2'
+
+const scrollToRef = () => window.scrollTo(0, 0) 
 
 class CreateContact extends Component {
   state = {
@@ -27,6 +31,7 @@ class CreateContact extends Component {
     reason: "", 
     message: ""
   };
+
 
   submit = async e => {
     e.preventDefault();
@@ -47,7 +52,6 @@ class CreateContact extends Component {
           backgroundImage= "url('/Background.jpg')"
           backgroundSize= {["contain","contain","cover","cover"]}
           width= "100vw"
-          height= {["150vh", "250vh", "250vh", "180vh"]}
           alignItems="center"
         >
           <Image src="../AS developer.png" alt="A|S developer" w="20vw" mt="20vh" />
@@ -178,7 +182,39 @@ class CreateContact extends Component {
             <br></br>
             <hr></hr>
           </Box>
+          <br></br>
+          <br></br>
+          <br></br>
         </Stack>
+
+        <Breadcrumb 
+          separator="  "   
+          spacing={3} 
+          bottom={0}
+          zIndex="99"
+          textAlign="center"
+          backgroundColor="#353F49"
+          w="100vw"
+          h="10vh"
+          justify="center"
+          position="relative"
+        >
+          <BreadcrumbItem>
+            <Link href="https://www.linkedin.com/in/arturo-araujo-alvarez/" isExternal>
+              <Image src="../link.png" alt="linkedin" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+            </Link>
+          </BreadcrumbItem>
+          <BreadcrumbItem >
+          <Link onClick={()=>scrollToRef()}>
+            <Image onClick={() => this.props.history.push("/en/contact")} src="../usa.png" alt="English" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+          </Link>
+        </BreadcrumbItem>
+          <BreadcrumbItem >
+            <Link href="https://github.com/ASdeveloper-app" isExternal>
+              <Image src="../git.png" alt="github" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+            </Link>
+          </BreadcrumbItem>
+        </Breadcrumb>
       </>
     );
   }

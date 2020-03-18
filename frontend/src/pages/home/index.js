@@ -6,7 +6,9 @@ import {
   Box,
   SimpleGrid,
   Flex,
-  Link
+  Link,
+  Breadcrumb,
+  BreadcrumbItem
 } from "@chakra-ui/core";
 
 import English from '../../components/Navbar'
@@ -20,7 +22,7 @@ function Home({ history }) {
       backgroundImage= "url('/Background.jpg')"
       backgroundSize= {["contain","contain","cover","cover"]}
       width= "100vw"
-      height= {["70vh", "100vh", "150vh", "85vh"]}
+
       alignItems="center"
     >
       <Image src="../AS developer.png" alt="A|S developer" w={["30vw", "30vw", "20vw", "20vw", ]} mt="10vh" />
@@ -60,15 +62,31 @@ function Home({ history }) {
           </Box>
          </SimpleGrid>
         <hr></hr>
-
         </Box>
-
-      
-
-
-
-
     </Stack>
+    <Breadcrumb 
+            separator="  "   
+            spacing={3} 
+            bottom={0}
+            zIndex="99"
+            textAlign="center"
+            backgroundColor="#353F49"
+            w="100vw"
+            h="10vh"
+            justify="center"
+            position="absolute"
+          >
+            <BreadcrumbItem mt={0}>
+              <Link href="https://www.linkedin.com/in/arturo-araujo-alvarez/" isExternal>
+                <Image src="../link.png" alt="linkedin" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+              </Link>
+            </BreadcrumbItem>
+            <BreadcrumbItem >
+              <Link href="https://github.com/ASdeveloper-app" isExternal>
+                <Image src="../git.png" alt="github" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+              </Link>
+            </BreadcrumbItem>
+          </Breadcrumb>
     </>
 
   );

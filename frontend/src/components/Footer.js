@@ -34,6 +34,11 @@ function Footer({ history }) {
                 <Image src="../git.png" alt="github" w={["8vh", "8vh", "8vh", "7vh"]} /> 
               </Link>
             </BreadcrumbItem>
+            <BreadcrumbItem >
+              <Link href="https://github.com/ASdeveloper-app" isExternal>
+                <Image src="../mex.png" alt="github" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+              </Link>
+            </BreadcrumbItem>
           </Breadcrumb>
         )       
     }}

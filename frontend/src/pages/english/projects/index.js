@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 
 import {
   Stack,
@@ -7,11 +7,17 @@ import {
   Flex,
   Link,
   Button,
-  ButtonGroup
+  ButtonGroup,
+  Breadcrumb,
+  BreadcrumbItem
 } from "@chakra-ui/core";
 
 import English from '../../../components/Navbar'
-function Projects() {
+
+const scrollToRef = () => window.scrollTo(0, 0)   
+
+function Projects({history}) {
+  const go = path => history.push(path)
   return (
     <>
     <English/>
@@ -19,10 +25,10 @@ function Projects() {
       backgroundImage= "url('/Background.jpg')"
       backgroundSize= {["contain","contain","cover","cover"]}
       width= "100vw"
-      height= {["150vh", "250vh", "300vh", "250vh"]}
       alignItems="center"
+
     >
-        <Flex fontSize={["5vw","3vw"]} color="white" mt={["10vh", "20vh"]}>
+        <Flex fontSize={["5vw","3vw"]} color="white" mt={["10vh", "20vh"]} >
           <p>Star Hack</p>
         </Flex>
         <Box w={["80vw", "50vw"]} borderWidth="1px" rounded="lg" overflow="hidden" bg="white">
@@ -45,17 +51,17 @@ function Projects() {
                 <Flex justify="center" mt={5} mb={4}>
                   <ButtonGroup spacing={5}>
                     <Link href="https://asdeveloper-app.github.io/Star-Hack/" isExternal>
-                      <Button variantColor="c3" size="sm">
+                      <Button variantColor="c3" size="sm" mb={2}>
                         Video
                       </Button>
                     </Link>
                     <Link href="https://slides.com/araujo-code/deck/fullscreen#/" isExternal>
-                      <Button variantColor="c3" size="sm">
+                      <Button variantColor="c3" size="sm" mb={2}>
                         Slides
                       </Button>
                     </Link>
                     <Link href="https://asdeveloper-app.github.io/Star-Hack/" isExternal>
-                      <Button variantColor="c3" size="sm">
+                      <Button variantColor="c3" size="sm" mb={2}>
                         Demo
                       </Button>
                     </Link>
@@ -70,7 +76,7 @@ function Projects() {
         </Flex>
         <Box w={["80vw", "50vw"]} borderWidth="1px" rounded="lg" overflow="hidden" bg="white">
             <Flex justify="center">
-              <Image src="../mane.png" alt="star hack" w={["30vw", "20vw"]} mt="2vh"/>
+              <Image src="../mane.png" alt="mane" w={["30vw", "20vw"]} mt="2vh"/>
             </Flex> 
             <Box p="4">
 
@@ -83,17 +89,17 @@ function Projects() {
                 <Flex justify="center" mt={5} mb={4}>
                   <ButtonGroup spacing={5}>
                     <Link href="https://maneironhack.herokuapp.com/" isExternal>
-                      <Button variantColor="c3" size="sm">
+                      <Button variantColor="c3" size="sm" mb={2}>
                         Video  
                       </Button>
                     </Link>
                     <Link href="https://slides.com/adrianalexisacevedoarmenta/deck-d78fdf/fullscreen#/" isExternal>
-                      <Button variantColor="c3" size="sm">
+                      <Button variantColor="c3" size="sm" mb={2}>
                         Slides
                       </Button>
                     </Link>
                     <Link href="https://maneironhack.herokuapp.com/" isExternal>
-                      <Button variantColor="c3" size="sm">
+                      <Button variantColor="c3" size="sm" mb={2}>
                         Demo  
                       </Button>
                     </Link>
@@ -108,7 +114,7 @@ function Projects() {
         </Flex>
           <Box w={["80vw", "50vw"]} borderWidth="1px" rounded="lg" overflow="hidden" bg="white" >
             <Flex justify="center">
-              <Image src="../iologo.png" alt="star hack" w={["30vw", "20vw"]} mt="2vh"/>
+              <Image src="../iologo.png" alt="integralOffice" w={["30vw", "20vw"]} mt="2vh"/>
             </Flex>
             <Box p="4">
 
@@ -121,17 +127,17 @@ function Projects() {
                 <Flex justify="center" mt={5} mb={4}>
                   <ButtonGroup spacing={5}>
                     <Link href="https://integral-office.netlify.com/" isExternal>
-                      <Button variantColor="c3" size="sm">
+                      <Button variantColor="c3" size="sm" mb={2}>
                         Video
                       </Button>
                     </Link>
                     <Link href="https://slides.com/araujo-code/deck-70b676/fullscreen#/" isExternal>
-                      <Button variantColor="c3" size="sm">
+                      <Button variantColor="c3" size="sm" mb={2}>
                         Slides
                       </Button>
                     </Link>
                     <Link href="https://integral-office.netlify.com/" isExternal>
-                      <Button variantColor="c3" size="sm">
+                      <Button variantColor="c3" size="sm" mb={2}>
                         Demo
                       </Button>
                     </Link>
@@ -140,8 +146,38 @@ function Projects() {
 
             </Box>
         </Box>
- 
+        <br></br>
+        <br></br>
+        
     </Stack>
+    <Breadcrumb 
+      separator="  "   
+      spacing={3} 
+      bottom={0}
+      zIndex="99"
+      textAlign="center"
+      backgroundColor="#353F49"
+      w="100vw"
+      h="10vh"
+      justify="center"
+      position="relative"
+    >
+      <BreadcrumbItem>
+        <Link href="https://www.linkedin.com/in/arturo-araujo-alvarez/" isExternal>
+          <Image src="../link.png" alt="linkedin" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+        </Link>
+      </BreadcrumbItem>
+      <BreadcrumbItem >
+        <Link onClick={()=>scrollToRef()}>
+          <Image onClick={() => go('/es/proyectos')} src="../mex.png" alt="espanol" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+        </Link>
+      </BreadcrumbItem>
+      <BreadcrumbItem >
+        <Link href="https://github.com/ASdeveloper-app" isExternal>
+          <Image src="../git.png" alt="github" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+        </Link>
+      </BreadcrumbItem>
+    </Breadcrumb>
     </>
 
   );

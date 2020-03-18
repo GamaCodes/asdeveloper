@@ -18,6 +18,7 @@ function Navbar({ history }) {
             spacing={3} 
             bottom={0}
             zIndex="99"
+            position="relative"
             textAlign="center"
             backgroundColor="#353F49"
             w="100vw"

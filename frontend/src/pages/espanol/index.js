@@ -5,10 +5,15 @@ import {
   Image,
   Box,
   SimpleGrid,
-  Flex
+  Flex,
+  Breadcrumb,
+  BreadcrumbItem,
+  Link
 } from "@chakra-ui/core";
 
 import Espanol from '../../components/Navbar2'
+
+const scrollToRef = () => window.scrollTo(0, 0)  
 
 const picture = [
   {
@@ -47,7 +52,8 @@ const picture = [
     name:'Node JS',
     src:"../node.png"
   }]
-function Home() {
+function Home({ history }) {
+  const go = path => history.push(path)
   return (
     <>
     <Espanol/>
@@ -55,7 +61,6 @@ function Home() {
       backgroundImage= "url('/Background.jpg')"
       backgroundSize= {["contain","contain","cover","cover"]}
       width= "100vw"
-      height= {["200vh", "250vh", "400vh", "250vh"]}
       alignItems="center"
     >
       <Image src="../AS developer.png" alt="A|S developer" w="30vw" mt="16vh" />
@@ -99,12 +104,43 @@ function Home() {
       <SimpleGrid columns={[3, 2, 3, 3]} spacing={5} m={["10"]}>
         { picture.map((e, i) => {
           return (
-              <img src={e.src} alt={e.name} />
+              <img src={e.src} alt={e.name} key={i} />
           )
           })
         }
+        <br></br>
       </SimpleGrid>
+      <br></br>
     </Stack>
+    
+    <Breadcrumb 
+            separator="  "   
+            spacing={3} 
+            bottom={0}
+            zIndex="99"
+            textAlign="center"
+            backgroundColor="#353F49"
+            w="100vw"
+            h="10vh"
+            justify="center"
+            position="relative"
+          >
+       <BreadcrumbItem>
+          <Link href="https://www.linkedin.com/in/arturo-araujo-alvarez/" isExternal>
+            <Image src="../link.png" alt="linkedin" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+          </Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem >
+          <Link onClick={()=>scrollToRef()}>
+            <Image onClick={() => go('/en')} src="../usa.png" alt="English" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+          </Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem >
+          <Link href="https://github.com/ASdeveloper-app" isExternal>
+            <Image src="../git.png" alt="github" w={["8vh", "8vh", "8vh", "7vh"]} /> 
+          </Link>
+        </BreadcrumbItem>
+    </Breadcrumb>
     </>
   );
 }

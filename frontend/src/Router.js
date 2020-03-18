@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Footer from './components/Footer';
-
 import Home from './pages/home';
 
 import English from './pages/english';
@@ -28,7 +26,6 @@ const Router = () => (
       <Route exact path="/es/contacto" component={Contacto} />
       <Route component={NotFound} />
     </Switch>
-    <Footer/>
   </BrowserRouter>
 );
 
