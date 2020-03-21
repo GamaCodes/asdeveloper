@@ -108,8 +108,30 @@ function Home({ history }) {
           )
           })
         }
-        <br></br>
+
       </SimpleGrid>
+
+    <Flex 
+      color="white" 
+      mt="4vh"
+      fontWeight="semibold"
+      as="h4"
+      lineHeight="tight"
+      fontSize={["5vw", "6vw", "3vw"]}
+      justify="center"
+      >
+        <p>Certificados:</p>
+      </Flex>
+      <Flex
+      mt="1vh"
+      mb="4vh"
+      justify="center"
+      >
+        <Link href="https://www.credential.net/4da7a6a7-e780-4378-bb58-8cd47237c8fd" isExternal>
+          <Image src="../logg.png" alt="Certificado" w={["15vh", "15vh", "15vh", "20vh"]} /> 
+        </Link>
+      </Flex>
+      <br></br>
       <br></br>
     </Stack>
     

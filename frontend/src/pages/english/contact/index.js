@@ -71,24 +71,23 @@ class CreateContact extends Component {
             <SimpleGrid columns={[1, 2]} justify="space-around">
               <Box>
                 <br></br>
-                <p>Phone:</p>
-                <p>55 5417-8003</p>
                 <Stack isInline justify="center">
                   <Link href="https://wa.me/5215554178003" isExternal>
                     <Box as={IoLogoWhatsapp} size={["10vw", "2vw"]} color="white"/> 
                   </Link>
                 </Stack>
+                <p>55 5417-8003</p>
                 <br></br>
               </Box>
               <Box>
               <br></br>
-                <p>Email:</p>
-                <p>arturo.araujo.alvarez@gmail.com</p>
                 <Stack isInline justify="center">
                   <Link href="mailto:arturo.araujo.alvarez@gmail.com" isExternal>
                     <Box as={IoIosMail} size={["10vw", "2vw"]} color="white"/>
                   </Link>
                 </Stack>
+                <p>arturo.araujo.alvarez@gmail.com</p>
+                <p>asdeveloper.app@gmail.com</p>
                 <br></br>
               </Box>
             </SimpleGrid>

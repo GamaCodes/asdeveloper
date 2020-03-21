@@ -127,7 +127,7 @@ function Proyectos({history}) {
                 </Box>
                 <Flex justify="center" mt={5} mb={4}>
                   <ButtonGroup spacing={1}>
-                    <Link href="https://integral-office.netlify.com/" isExternal>
+                    <Link href="https://youtu.be/_BWe5pw9KFc/" isExternal>
                       <Button variantColor="c3" size="sm" mb={2}>
                         Video
                       </Button>

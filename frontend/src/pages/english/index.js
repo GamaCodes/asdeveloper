@@ -79,9 +79,10 @@ function Home({history}) {
         </Flex>
         <hr></hr>
         <Box m={5}>
-          <p>My name is Arturo Araujo, I am particularly analytical and passionate about technology, always looking to implement new ways to optimize processes and provide solutions.</p>
-          <p>I am currently a Full-Stack Web Developer with a background of more than 4 years in the administrative sector, focusing on management and finance.</p>
-          <p>I firmly believe that programming is the new way to solve problems and automate processes and for this reason I decided to enter this great world of programming and thus be able to exploit my creativity and management skills by automating processes and solving the demands of the sector.</p>
+          <p>My name is Arturo Araujo. I am particularly analytical and passionate about technology. 
+          I am always seeking to new ways to optimize processes and create solutions.</p>
+          <p>I am currently a Full-Stack Web Developer with more than 4 years of experience in the administrative sector, focusing on management and finance.</p>
+          <p>I am a staunch believer that programming is the new way to solve problems and automate processes. This is the reason why I decided to enter the great world of programming, so that I can exploit my creativity and management skills by providing better automated processes and solving the sector’s demands.</p>
           <p>The last 4 years I have dedicated myself to exploiting my creative and technological as well as administrative and management skills to optimize processes within the companies where I have collaborated.</p>
           <p>"If you can imagine it, I can program it."</p>
         </Box>
@@ -108,8 +109,31 @@ function Home({history}) {
         }
       <br></br>
       </SimpleGrid>
+
+    <Flex 
+      color="white" 
+      mt="4vh"
+      fontWeight="semibold"
+      as="h4"
+      lineHeight="tight"
+      fontSize={["5vw", "6vw", "3vw"]}
+      justify="center"
+      >
+        <p>Certificates:</p>
+      </Flex>
+      <Flex
+      mt="1vh"
+      mb="4vh"
+      justify="center"
+      >
+        <Link href="https://www.credential.net/4da7a6a7-e780-4378-bb58-8cd47237c8fd" isExternal>
+          <Image src="../logg.png" alt="Certificado" w={["15vh", "15vh", "15vh", "20vh"]} /> 
+        </Link>
+      </Flex>
+      <br></br>
+      <br></br>
     </Stack>
-    <br></br>
+    
 
     <Breadcrumb 
       separator="  "   

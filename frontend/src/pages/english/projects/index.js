@@ -126,7 +126,7 @@ function Projects({history}) {
                 Integral Office is an ERP, or in other words an enterprise resource planning system, it is created in order to be able to better control and manage business.                </Box>
                 <Flex justify="center" mt={5} mb={4}>
                   <ButtonGroup spacing={5}>
-                    <Link href="https://integral-office.netlify.com/" isExternal>
+                    <Link href="https://youtu.be/_BWe5pw9KFc/" isExternal>
                       <Button variantColor="c3" size="sm" mb={2}>
                         Video
                       </Button>
